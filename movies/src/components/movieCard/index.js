@@ -15,6 +15,7 @@ import IconButton from "@mui/material/IconButton";
 import Grid from "@mui/material/Grid2";
 import Avatar from '@mui/material/Avatar';
 import img from '../../images/film-poster-placeholder.png'
+import PlaylistAddIcon from "@mui/icons-material/PlaylistAdd";
 
 export default function MovieCard({ movie, action }) {
   const { favorites, addToFavorites } = useContext(MoviesContext);
@@ -34,11 +35,18 @@ export default function MovieCard({ movie, action }) {
     <Card>
         <CardHeader
         avatar={
-          movie.favorite ? (
-            <Avatar sx={{ backgroundColor: 'red' }}>
-              <FavoriteIcon />
-            </Avatar>
-          ) : null
+          <div>
+            {movie.favorite ? (
+              <Avatar sx={{ backgroundColor: 'red' }}>
+                <FavoriteIcon />
+              </Avatar>
+            ) : null}
+            {movie.playlist ? (
+              <Avatar sx={{ backgroundColor: 'purple' }}>
+                <PlaylistAddIcon />
+              </Avatar>
+            ) : null}
+          </div>
         }
         title={
           <Typography variant="h5" component="p">
