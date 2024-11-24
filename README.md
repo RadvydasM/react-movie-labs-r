@@ -40,4 +40,4 @@ All aspects of the app are public.
 
 N/A
 
-Youtube video link: 
+Youtube video link: https://youtu.be/l9FRGmTyDqM
