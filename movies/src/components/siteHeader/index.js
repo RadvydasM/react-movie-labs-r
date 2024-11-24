@@ -45,7 +45,7 @@ const SiteHeader = ({ history }) => {
       <AppBar position="fixed" color="primary">
         <Toolbar>
           <Typography variant="h4" sx={{ flexGrow: 1 }}>
-            TMDB Client
+            Radvydas's TMDB Client
           </Typography>
           <Typography variant="h6" sx={{ flexGrow: 1 }}>
             Details about any movie in one place!

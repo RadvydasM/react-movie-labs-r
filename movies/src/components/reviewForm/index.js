@@ -12,20 +12,36 @@ import { useNavigate } from "react-router-dom";
 
 const ratings = [
   {
-    value: 5,
+    value: 8,
+    label: "Legendary",
+  },
+  {
+    value: 7,
+    label: "Outstanding",
+  },
+  {
+    value: 6,
     label: "Excellent",
   },
   {
-    value: 4,
+    value: 5,
     label: "Good",
   },
   {
-    value: 3,
+    value: 4,
     label: "Average",
+  },
+  {
+    value: 3,
+    label: "OK",
   },
   {
     value: 2,
     label: "Poor",
+  },
+  {
+    value: 1,
+    label: "Meh",
   },
   {
     value: 0,
