@@ -1,4 +1,4 @@
-import React, {useState, useEffect}  from "react";
+import React from "react";
 import { getGenres } from "../../api/tmdb-api";
 import Card from "@mui/material/Card";
 import CardMedia from "@mui/material/CardMedia";
@@ -18,7 +18,7 @@ const formControl =
   {
     margin: 1,
     minWidth: 220,
-    backgroundColor: "rgb(255, 255, 255)"
+    backgroundColor: "rgb(100, 255, 100)"
   };
 
 export default function FilterMoviesCard(props) {
